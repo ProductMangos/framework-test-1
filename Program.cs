@@ -1,9 +1,10 @@
-﻿//----------------------------------------------------------------
+//----------------------------------------------------------------
 // Copyright (c) Microsoft Corporation.  All rights reserved.
 //----------------------------------------------------------------
 
 using System;
 using System.Collections.Specialized;
+using CoreWCF;
 
 namespace Microsoft.Samples.UriTemplates
 {
@@ -28,7 +29,7 @@ namespace Microsoft.Samples.UriTemplates
             Console.WriteLine(positionalUri);
             Console.WriteLine();
 
-            //BindByName takes a NameValueCollection of parameters. 
+            //BindByName takes a NameValueCollection of parameters.
             //Each parameter gets substituted into the UriTemplate "hole"
             //that has the same name as the parameter.
             NameValueCollection parameters = new NameValueCollection();
